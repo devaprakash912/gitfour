@@ -33,6 +33,7 @@ public class StudentController {
 
    @DeleteMapping("students/{rno}")
     public String delete(@PathVariable int rno){
+       System.out.println("Met");
        return studentService.deleteStudent(rno);
 
    }
